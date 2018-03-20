@@ -10,7 +10,6 @@ const getParamValue = (url, param) => {
   return url.searchParams.get(param)
 };
 
-
 const renderListPosts = (data) => {
   container.innerHTML = `<h3>List of Posts</h3>`;;
   data.forEach((element) => {
@@ -47,9 +46,7 @@ const render = (location) => {
   let url = new URL(location);
 
   if(getParamValue(url, 'postId')) {
-	  
     return request(API_ENDPOINT, `/${getParamValue(url, 'postId')}`, renderPost);
-
   }
 
   if(getParamValue(url, 'userId')) {
