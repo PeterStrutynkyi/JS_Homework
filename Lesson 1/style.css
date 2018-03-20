@@ -1,0 +1,21 @@
+
+body {
+	font-family: courier;
+	color: black;
+	margin-left: 30px;
+	font-size: 120%;
+}
+
+p {
+	text-indent: 50px;
+}
+
+h3 {
+	color: blue;
+    font-size: 150%;
+	text-align: center;
+}
+
+button {
+	text-align: center;
+}
